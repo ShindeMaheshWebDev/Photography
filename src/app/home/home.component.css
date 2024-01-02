@@ -1,0 +1,54 @@
+.shape1{
+    height: 30px;
+    width: 30px;
+    border: 3px solid white;
+    animation: demo 3s linear infinite;
+    right: 30px;
+    position: absolute;
+    top: 30px;
+}
+
+@keyframes demo{
+    0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+.container-fluid{
+    min-height: 100vh;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/906457/pexels-photo-906457.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+ 	background-position: center;
+    z-index: -1;
+
+}
+.container-fluid:before{
+    content: '';
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -2;
+    position: absolute;
+    
+}
+h1{
+    font-size: 40px;
+}
+h4{
+    font-size: 30px;
+}
+h6{
+    font-size: 20px;
+}
+.text h1:after{
+    content: "";
+animation: demo1 4s linear infinite;
+}
+@keyframes demo1 {
+    0%{content:'PHOTOGRAPHER'}
+    30%{content: 'EDITOR';}
+    60%{content: 'VIDEO CREATOR';}
+    100%{content: 'DESIGNER';}
+}

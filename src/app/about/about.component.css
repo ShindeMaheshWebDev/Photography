@@ -1,0 +1,41 @@
+.col-md-5{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col-md-5 img{
+   max-height: 600px;
+    width: 100%;
+    object-position: center;
+}
+.col-md-6 h2{
+    background: linear-gradient(to right,red ,purple 10%,green 20%);
+    border-bottom: 2px solid red;
+    padding: 10px;
+    background-clip: text;
+    font-weight: 800;
+    font-size: 40px;
+  color: transparent;
+}
+.four{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.four .one h1{
+    background: linear-gradient(to right,red,purple,green);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+.four .one p{
+    font-size: 28px;
+    font-weight: bold;
+    color: grey;
+}
+.but button{
+    padding: 20px;
+    margin: 20px;
+}
